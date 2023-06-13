@@ -41,12 +41,18 @@ const destFonts = () => {
     .pipe(dest('build/fonts'));
   };
 
+const destScripts = () => {
+  return src('app/scripts/**/*')
+    .pipe(dest('build/scripts'));
+};
+
 const startWatch = () => {
   watch('app/**/*.pug', buildPug);
   watch('app/scss/**/*.scss', buildSass);
   watch('app/images/icons/*.svg', destImages);
   watch('app/images/*', destFonts);
+  watch('app/scripts/*', destScripts);
 };
 
 exports.server = browserSyncJob;
-exports.build = series(parallel(buildSass, buildPug, destImages, destFonts), startWatch);
+exports.build = series(parallel(buildSass, buildPug, destImages, destFonts, destScripts), startWatch);
