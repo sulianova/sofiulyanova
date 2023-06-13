@@ -1,7 +1,8 @@
 {
   "scripts": {
     "lint": "npx stylelint --fix ./app/scss/**/*.scss & npx pug-lint ./app/**/*.pug",
-    "build": "npx gulp build"
+    "build": "npx gulp build",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "browser-sync": "^2.29.1",
