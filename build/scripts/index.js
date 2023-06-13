@@ -14,6 +14,21 @@ function highlightLinks() {
     }
 }
 
+function makeMobMenu() {
+    const header = document.querySelector('.header');
+    const btnOpen = document.querySelector('.header-humburger');
+    const btnClose = document.querySelector('.header-mob-menu-controls');
+
+    btnOpen.addEventListener('click', () => {
+        header.classList.add('is-mobile-menu-opened');
+    });
+
+    btnClose.addEventListener('click', () => {
+        header.classList.remove('is-mobile-menu-opened');
+    });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
     highlightLinks();
+    makeMobMenu();
 });
