@@ -40,9 +40,11 @@ function makeMobMenu() {
 
     btnOpen.addEventListener('click', () => {
         header.classList.add('is-mobile-menu-opened');
+        document.body.style.overflow = 'hidden';
     });
 
     btnClose.addEventListener('click', () => {
         header.classList.remove('is-mobile-menu-opened');
+        document.body.style.overflow = null;
     });
 }

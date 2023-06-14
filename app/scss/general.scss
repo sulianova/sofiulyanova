@@ -134,10 +134,10 @@ button {
 }
 
 .page-content {
-  margin-top: set-calc(16);
+  margin-top: set-calc(60);
 
   @include set-media(md) {
-    margin-top: 0;
+    margin-top: set-calc(211);
   }
 }
 
