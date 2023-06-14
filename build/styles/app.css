@@ -15,13 +15,8 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-weight: 500;
-  font-family: TTInterphasesPro;
-  src: url("../fonts/TTInterphasesPro-Medium.ttf");
-}
 html {
-  font-family: TTInterphasesPro, sans-serif !important;
+  font-family: Myfake, sans-serif !important;
   font-size: calc(var(--scale) * 18);
   line-height: calc(var(--scale) * 28);
   font-weight: 500;
@@ -135,7 +130,7 @@ button {
   padding: 0;
   background: none;
   outline: none;
-  font-family: TTInterphasesPro, sans-serif !important;
+  font-family: Myfake, sans-serif !important;
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s, opacity 0.2s;
   -ms-text-size-adjust: 100%;
