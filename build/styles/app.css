@@ -883,16 +883,41 @@ button:hover {
 }
 .drawings-item .content-title {
   margin-top: calc(var(--scale) * 8);
-  margin-right: calc(var(--scale) * 48);
   padding-bottom: calc(var(--scale) * 24);
 }
 @media (max-width: 767.98px) {
   .drawings-item .content-title {
     margin-top: calc(var(--scale) * 8);
-    padding-bottom: calc(var(--scale) * 8);
+    padding-bottom: calc(var(--scale) * 16);
   }
 }
 .drawings-item .content-description {
   margin-right: calc(var(--scale) * 48);
   padding-bottom: calc(var(--scale) * 24);
+}
+.drawings-item .content-description a {
+  color: #aaa;
+  padding-bottom: calc(var(--scale) * 16);
+}
+@media (max-width: 767.98px) {
+  .drawings-item .content-description a {
+    padding-bottom: calc(var(--scale) * 8);
+  }
+}
+.drawings-item .content-description p:not(:last-child) {
+  padding-bottom: calc(var(--scale) * 16);
+}
+@media (max-width: 767.98px) {
+  .drawings-item .content-description p:not(:last-child) {
+    padding-bottom: calc(var(--scale) * 8);
+  }
+}
+
+.drawings-item:last-child {
+  padding-bottom: 0;
+}
+@media (max-width: 767.98px) {
+  .drawings-item:last-child {
+    padding-bottom: 0;
+  }
 }

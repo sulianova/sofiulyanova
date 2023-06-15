@@ -12,7 +12,6 @@
 .drawings-item {
   position: sticky;
   top: set-calc(16);
-
   padding-bottom: set-calc(130);
 
   background-color: $white;
@@ -50,18 +49,42 @@
 
     &-title {
       margin-top: set-calc(8);
-      margin-right: set-calc(48);
       padding-bottom: set-calc(24);
 
       @include set-media(md) {
         margin-top: set-calc(8);
-        padding-bottom: set-calc(8);
+        padding-bottom: set-calc(16);
       }
     }
 
     &-description {
       margin-right: set-calc(48);
       padding-bottom: set-calc(24);
+
+      a {
+        color: $grey;
+        padding-bottom: set-calc(16);
+
+        @include set-media(md) {
+          padding-bottom: set-calc(8);
+        }
+      }
+
+      p:not(:last-child) {
+        padding-bottom: set-calc(16);
+
+        @include set-media(md) {
+          padding-bottom: set-calc(8);
+        }
+      }
     }
+  }
+}
+
+.drawings-item:last-child {
+  padding-bottom: 0;
+
+  @include set-media(md) {
+    padding-bottom: 0;
   }
 }
