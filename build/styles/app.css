@@ -896,8 +896,8 @@ button:hover {
   padding-bottom: calc(var(--scale) * 24);
 }
 .drawings-item .content-description a {
-  color: #aaa;
   padding-bottom: calc(var(--scale) * 16);
+  color: #aaa;
 }
 @media (max-width: 767.98px) {
   .drawings-item .content-description a {

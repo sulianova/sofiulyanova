@@ -12,6 +12,7 @@
 .drawings-item {
   position: sticky;
   top: set-calc(16);
+
   padding-bottom: set-calc(130);
 
   background-color: $white;
@@ -62,8 +63,9 @@
       padding-bottom: set-calc(24);
 
       a {
-        color: $grey;
         padding-bottom: set-calc(16);
+
+        color: $grey;
 
         @include set-media(md) {
           padding-bottom: set-calc(8);
